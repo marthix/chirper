@@ -1,0 +1,79 @@
+//////////////////////
+// Variables
+//////////////////////
+
+// Colors
+$teal:              #50e3c2;
+$teal_trans:        rgba(79, 227, 194, 0.3);
+$blue:              #2274A5;
+$pop:               #E4572E;
+$white:             #e8fbf7;
+$white_trans:       rgba(232, 251, 247, 0.3);
+$gray:              #5b5b5b;
+$black:             #0c0e0e;
+
+// Fonts
+$bodyFont:          'Roboto', sans-serif;
+$headerFont:        'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, $blue, $teal);
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  min-width: 100px;
+  max-width: 150px;
+  margin-top: 10vh;
+}
+
+.header {
+  color: $white;
+  font-family: $headerFont;
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 40px;
+
+    span {
+      color: darken($white, 19);
+    }
+  }
+}
+
+#sign-in {
+  margin: 50px;
+
+  button {
+    width: 100%;
+    max-width: 160px;
+    padding: 10px;
+    border: 2px solid $white;
+    background-color: transparent;
+    color: $white;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: $white_trans;
+    }
+  }
+
+  .btn-sign-up {
+    border: 2px solid $teal;
+
+    &:hover {
+      background-color: $teal_trans;
+    }
+  }
+}

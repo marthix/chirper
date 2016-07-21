@@ -1,0 +1,23 @@
+{
+  "name": "chirper",
+  "version": "1.0.0",
+  "description": "A social netwerk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marthix/chirper.git"
+  },
+  "author": "Jason Lestina and Marie Denney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marthix/chirper/issues"
+  },
+  "homepage": "https://github.com/marthix/chirper#readme",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}
