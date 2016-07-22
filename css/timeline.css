@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #e8fbf7;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(45deg, #50e3c2, #2274A5);
+  text-align: center;
+}
+
+.logo {
+  width: 40px;
+  margin: 10px;
+}

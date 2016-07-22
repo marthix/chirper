@@ -1,0 +1,110 @@
+//////////////////////
+// Variables
+//////////////////////
+
+// Colors
+$teal:              #50e3c2;
+$teal_trans:        rgba(79, 227, 194, 0.3);
+$blue:              #2274A5;
+$blue_trans:        rgba(34, 116, 164, 0.5);
+$pop:               #E4572E;
+$white:             #e8fbf7;
+$white_trans:       rgba(232, 251, 247, 0.3);
+$gray:              #5b5b5b;
+$black:             #0c0e0e;
+
+// Fonts
+$bodyFont:          'Roboto', sans-serif;
+$headerFont:        'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, $blue, $teal);
+  height: 100vh;
+  font-family: $bodyFont;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  min-width: 100px;
+  max-width: 150px;
+  margin-top: 10vh;
+}
+
+.header {
+  color: $white;
+  font-family: $headerFont;
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+}
+
+#view {
+  margin: 50px 10px 20px;
+}
+
+#signup-form,
+#signin-form {
+  ::-webkit-input-placeholder {
+     color: $blue_trans;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $blue_trans;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $blue_trans;
+  }
+
+  :-ms-input-placeholder {
+     color: $blue_trans;
+  }
+}
+
+#btnSignup {
+  width: 100%;
+  max-width: 260px;
+  min-width: 75px;
+  padding: 10px;
+  border: 2px solid $blue;
+  background-color: transparent;
+  color: $blue;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.2s ease all;
+
+  &:hover {
+    background-color: $blue_trans;
+    color: $white;
+  }
+}
+
+#btnSignin {
+  width: 100%;
+  max-width: 260px;
+  min-width: 75px;
+  padding: 10px;
+  border: 2px solid $white;
+  background-color: transparent;
+  color: $white;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.2s ease all;
+
+  &:hover {
+    background-color: $white_trans;
+    color: $blue;
+  }
+}

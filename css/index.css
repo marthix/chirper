@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #2274A5, #50e3c2);
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  min-width: 100px;
+  max-width: 150px;
+  margin-top: 10vh;
+}
+
+.header {
+  color: #e8fbf7;
+  font-family: "Raleway", sans-serif;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+.header h3 {
+  font-size: 40px;
+}
+
+#view {
+  margin: 50px 10px 20px;
+}
+
+#signup-form ::-webkit-input-placeholder,
+#signin-form ::-webkit-input-placeholder {
+  color: rgba(34, 116, 164, 0.5);
+}
+
+#signup-form :-moz-placeholder,
+#signin-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(34, 116, 164, 0.5);
+}
+
+#signup-form ::-moz-placeholder,
+#signin-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(34, 116, 164, 0.5);
+}
+
+#signup-form :-ms-input-placeholder,
+#signin-form :-ms-input-placeholder {
+  color: rgba(34, 116, 164, 0.5);
+}
+
+#btnSignup {
+  width: 100%;
+  max-width: 260px;
+  min-width: 75px;
+  padding: 10px;
+  border: 2px solid #2274A5;
+  background-color: transparent;
+  color: #2274A5;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.2s ease all;
+}
+
+#btnSignup:hover {
+  background-color: rgba(34, 116, 164, 0.5);
+  color: #e8fbf7;
+}
+
+#btnSignin {
+  width: 100%;
+  max-width: 260px;
+  min-width: 75px;
+  padding: 10px;
+  border: 2px solid #e8fbf7;
+  background-color: transparent;
+  color: #e8fbf7;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.2s ease all;
+}
+
+#btnSignin:hover {
+  background-color: rgba(232, 251, 247, 0.3);
+  color: #2274A5;
+}
