@@ -1,14 +1,17 @@
 module.exports = {
-  entry: './js/index.js',
+  entry: {
+    timeline: './js/timeline.js',
+    index: './js/index.js'
+  },
   output: {
     path: './',
-    filename: './index.bundle.js'
+    filename: './[name].bundle.js'
   },
   devServer: {
     inline: true,
     port: 8000,
     historyApiFallback: {
-      index: '/index.html'
+      index: '/index'
     }
   },
   module: {

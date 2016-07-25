@@ -10,9 +10,9 @@ class SignupForm extends React.Component {
       password: document.getElementById('password').value
     }
 
-    fetchApi('POST', '/users', formFields, function(response, statusCode) {
+    fetchApi('POST', '/users/', formFields, function(response, statusCode) {
       if (statusCode >= 200 && statusCode < 300) {
-        saveUserInfo(response.user.auth_token, response.user.id)
+        saveToken(response.user.auth_token)
         window.location.href = '/details.html'
       } else {
         var keys = Object.keys(response)

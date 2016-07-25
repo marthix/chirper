@@ -125,6 +125,11 @@ header {
   }
 }
 
+#posts {
+  height: 90vh;
+  overflow: scroll;
+}
+
 .post {
   width: 100%;
   margin: 10px;
@@ -165,4 +170,47 @@ header {
     margin-top: 5px;
     color: $gray;
   }
+
+  p {
+    overflow-wrap: normal;
+  }
+}
+
+.user {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: $pureWhite;
+  border: 1px solid lighten($gray, 50);
+  border-radius: 6px;
+
+  img {
+    border: 2px solid $pureWhite;
+    border-radius: 4px;
+    max-width: 40px;
+    max-height: 40px;
+    background-color: $pureWhite;
+    margin-left: -10px;
+  }
+
+  h1 {
+    display: block;
+    font-size: 12px;
+    font-family: $headerFont;
+    font-weight: bold;
+    margin-top: 0;
+    margin-right: 5px;
+  }
+
+  h2 {
+    display: block;
+    font-size: 11px;
+    margin-top: 0;
+    color: $gray;
+  }
+}
+
+#users {
+  height: 90vh;
+  overflow: scroll;
 }

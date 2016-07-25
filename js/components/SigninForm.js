@@ -12,7 +12,7 @@ class SigninForm extends React.Component {
       console.log(statusCode)
       if (statusCode >= 200 && statusCode < 300) {
         console.log(response)
-        saveUserInfo(response.user.auth_token, response.user.id)
+        saveToken(response.user.auth_token)
         window.location.href = '/timeline.html'
       } else if (statusCode === 419){
         // Throw an error for Incorrect Password
