@@ -1,7 +1,8 @@
 // API Host
-//var api = 'http://.herokuapp.com'
-var api = 'https://54d9a4d3.ngrok.io'
+var api = 'https://gentle-basin-30331.herokuapp.com/'
+// var api = 'https://7990d19b.ngrok.io'
 var tokenId = 'auth_token'
+var userId = 'id'
 var token = sessionStorage.getItem(tokenId)
 
 // Utilities
@@ -44,12 +45,22 @@ function fetchApi(method, endpoint, formFields, callback) {
     })
 }
 
-function saveToken(token) {
+function saveUserInfo(token, user) {
   sessionStorage.setItem(tokenId, token)
+  sessionStorage.setItem(userId, user)
 }
 
-function destroyToken() {
+function getUserId() {
+  return sessionStorage.getItem(userId)
+}
+
+function getToken() {
+  return sessionStorage.getItem(tokenId)
+}
+
+function destroyUserInfo() {
   sessionStorage.removeItem(tokenId)
+  sessionStorage.removeItem(userId)
 }
 
 function redirect(url) {

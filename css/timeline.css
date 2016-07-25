@@ -3,13 +3,9 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #e8fbf7;
-}
-
-img {
-  width: 100%;
 }
 
 header {
@@ -19,5 +15,133 @@ header {
 
 .logo {
   width: 40px;
+  margin: 12px 0;
+}
+
+#search {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  margin: 13px 0;
+  padding: 5px 10px;
+  outline: none;
+  background-color: rgba(232, 251, 247, 0.3);
+  transition: 0.3s ease all;
+}
+
+#search:focus {
+  background-color: #e8fbf7;
+}
+
+.profile-container {
+  height: 150px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  max-width: 300px;
+  min-width: 222px;
+  margin: 20px;
+}
+
+.profile-bkg {
+  height: 30%;
+  background-color: #2274A5;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.avatar-container {
+  height: 70%;
+  background-color: #FFFFFF;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.avatar {
+  margin-top: -20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  max-width: 60px;
+  max-height: 60px;
+  background-color: #FFFFFF;
+}
+
+.user-info {
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.user-info h1 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #0c0e0e;
+  margin: 0;
+}
+
+.user-info h2 {
+  font-size: 12px;
+  color: #5b5b5b;
+  margin: 0;
+}
+
+.user-stats {
+  padding: 0 5px 5px;
+}
+
+.user-stats h3 {
+  text-transform: uppercase;
+  color: #5b5b5b;
+  font-weight: lighter;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.user-stats h4 {
+  color: #2274A5;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.post {
+  width: 100%;
   margin: 10px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+}
+
+.post img {
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  max-width: 60px;
+  max-height: 60px;
+  background-color: #FFFFFF;
+  margin-left: -10px;
+}
+
+.post h1 {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin-top: 0;
+  margin-right: 5px;
+}
+
+.post h2 {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 0;
+  color: #5b5b5b;
+}
+
+.post h3 {
+  float: right;
+  display: inline-block;
+  font-size: 11px;
+  margin-top: 5px;
+  color: #5b5b5b;
 }

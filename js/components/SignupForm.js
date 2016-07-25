@@ -11,12 +11,28 @@ class SignupForm extends React.Component {
     }
 
     fetchApi('POST', '/users', formFields, function(response, statusCode) {
-      console.log(statusCode)
       if (statusCode >= 200 && statusCode < 300) {
-        saveToken(response.auth_token)
+        saveUserInfo(response.user.auth_token, response.user.id)
         window.location.href = '/details.html'
       } else {
-        // Throw an error
+        var keys = Object.keys(response)
+        var errors = document.querySelectorAll('.error-message')
+
+        for (var i = 0; i < errors.length; i++) {
+        errors[i].parentNode.removeChild(errors[i])
+        console.log(errors[i])
+        }
+
+        keys.forEach(function(key){
+          var item = document.getElementById('' + key + '')
+          var message = document.createElement('p')
+
+          message.innerHTML = key + ' ' + response[key].toString()
+          message.classList.add('error-message')
+
+          item.style.borderColor = '#E4572E'
+          item.parentNode.appendChild(message)
+        })
       }
     })
   }

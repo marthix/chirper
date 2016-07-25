@@ -92,3 +92,7 @@ img {
   background-color: rgba(232, 251, 247, 0.3);
   color: #2274A5;
 }
+
+.error-message {
+  color: #E4572E;
+}
