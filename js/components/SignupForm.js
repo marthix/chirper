@@ -13,7 +13,7 @@ class SignupForm extends React.Component {
     fetchApi('POST', '/users/', formFields, function(response, statusCode) {
       if (statusCode >= 200 && statusCode < 300) {
         saveToken(response.user.auth_token)
-        window.location.href = '/details.html'
+        window.location.href = '/timeline.html'
       } else {
         var keys = Object.keys(response)
         var errors = document.querySelectorAll('.error-message')
