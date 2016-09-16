@@ -46,7 +46,7 @@ class SignupForm extends React.Component {
         <LoginFormField type="text" placeholder="Name" id="name" />
         <LoginFormField type="text" placeholder="Email" id="email" />
         <LoginFormField type="text" placeholder="Username" id="username" />
-        <LoginFormField type="text" placeholder="Password" id="password" />
+        <LoginFormField type="password" placeholder="Password" id="password" />
         <div className="col-xs-12 col-sm-8 col-sm-offset-2">
           <button type="button" id="btnSignup" onClick={this.fetch}>Sign Up</button>
         </div>

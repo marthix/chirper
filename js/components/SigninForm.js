@@ -32,7 +32,7 @@ class SigninForm extends React.Component {
     return <form method="get" action="#" id="signin-form">
       <div className="row text-center">
         <LoginFormField type="text" placeholder="Username" id="username" />
-        <LoginFormField type="text" placeholder="Password" id="password" />
+        <LoginFormField type="password" placeholder="Password" id="password" />
         <div className="col-xs-12 col-sm-8 col-sm-offset-2">
           <button type="button" id="btnSignin" onClick={this.fetch}>Sign In</button>
         </div>
