@@ -27004,7 +27004,7 @@
 	          'div',
 	          { className: 'row text-center' },
 	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Username', id: 'username' }),
-	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Password', id: 'password' }),
+	          _react2.default.createElement(_LoginFormField2.default, { type: 'password', placeholder: 'Password', id: 'password' }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-sm-8 col-sm-offset-2' },
@@ -27121,7 +27121,7 @@
 	      fetchApi('POST', '/users/', formFields, function (response, statusCode) {
 	        if (statusCode >= 200 && statusCode < 300) {
 	          saveToken(response.user.auth_token);
-	          window.location.href = '/details.html';
+	          window.location.href = '/timeline.html';
 	        } else {
 	          var keys = Object.keys(response);
 	          var errors = document.querySelectorAll('.error-message');
@@ -27160,7 +27160,7 @@
 	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Name', id: 'name' }),
 	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Email', id: 'email' }),
 	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Username', id: 'username' }),
-	          _react2.default.createElement(_LoginFormField2.default, { type: 'text', placeholder: 'Password', id: 'password' }),
+	          _react2.default.createElement(_LoginFormField2.default, { type: 'password', placeholder: 'Password', id: 'password' }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-sm-8 col-sm-offset-2' },
