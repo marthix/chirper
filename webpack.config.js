@@ -10,9 +10,6 @@ module.exports = {
   devServer: {
     inline: true,
     port: 8000,
-    // historyApiFallback: {
-    //   index: '/index'
-    // }
     historyApiFallback: true
   },
   module: {
