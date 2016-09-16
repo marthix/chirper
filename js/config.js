@@ -1,6 +1,6 @@
 // API Host
-// var api = 'https://gentle-basin-30331.herokuapp.com'
-var api = 'http://1519054e.ngrok.io'
+var api = 'https://gentle-basin-30331.herokuapp.com'
+// var api = 'http://1519054e.ngrok.io'
 var tokenId = 'auth_token'
 var userId = 'id'
 var token = sessionStorage.getItem(tokenId)
